@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dip"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/evtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spekaer Name" />
+
+    <TextView
+        android:id="@+id/evtSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject" />
+
+    <TextView
+        android:id="@+id/evtRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Room" />
+
+</LinearLayout>

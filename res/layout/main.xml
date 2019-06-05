@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/aa"
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:layout_alignParentLeft="true"
+        android:text="8h00" />
+
+    <TextView
+        android:id="@+id/ab"
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:layout_below="@id/aa"
+        android:text="8h15" />
+
+    <TextView
+        android:id="@+id/ac"
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:layout_below="@id/ab"
+        android:text="8h30" />
+
+    <ScrollView
+        android:id="@+id/evt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ab"
+        android:layout_alignTop="@id/aa"
+        android:layout_toRightOf="@id/aa" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#99FF00FF"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/evtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spekaer Name" />
+
+            <TextView
+                android:id="@+id/evtSubject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject" />
+
+            <TextView
+                android:id="@+id/evtRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Room" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/evt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ac"
+        android:layout_alignTop="@id/ab"
+        android:layout_toRightOf="@id/evt1"
+        android:background="#99FF00FF"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/evtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spekaer Name" />
+
+        <TextView
+            android:id="@+id/evtSubject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject" />
+
+        <TextView
+            android:id="@+id/evtRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room" />
+    </LinearLayout>
+
+</RelativeLayout>
